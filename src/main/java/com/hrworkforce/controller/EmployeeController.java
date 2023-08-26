@@ -89,6 +89,7 @@ public class EmployeeController
 		 List<Employee> empList = employeeService.getAllEmployees();
 		if(!empList.isEmpty())
 		{
+			System.out.println("New Added Line..");
 			return new ResponseEntity<List<Employee>>(empList,HttpStatus.CREATED);
 		}
 		else
