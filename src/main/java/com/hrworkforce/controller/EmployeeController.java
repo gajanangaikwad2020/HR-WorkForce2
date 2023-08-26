@@ -61,6 +61,7 @@ public class EmployeeController
 		Employee dbEmployee= employeeService.getEmployeeById(empId);
 		if(dbEmployee!=null)
 		{
+			System.out.println("Added Code in get-emp-by-id api.");
 			return new ResponseEntity<Employee>(dbEmployee,HttpStatus.CREATED);
 		}
 		else
